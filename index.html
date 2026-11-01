@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login & Signup Form</title>
+
+    <!-- CSS Connection -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Welcome Back!</h1>
+        <p class="subtitle">Login to your account</p>
+
+        <!-- LOGIN FORM -->
+        <form id="loginForm">
+
+            <!-- Email -->
+            <div class="input-group">
+                <label for="loginEmail">Email</label>
+
+                <input
+                    type="text"
+                    id="loginEmail"
+                    placeholder="Enter your email"
+                >
+
+                <small class="error" id="loginEmailError"></small>
+            </div>
+
+            <!-- Password -->
+            <div class="input-group">
+                <label for="loginPassword">Password</label>
+
+                <div class="password-box">
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Enter your password"
+                    >
+
+                    <button
+                        type="button"
+                        class="toggle-password"
+                        data-target="loginPassword"
+                    >
+                        Show
+                    </button>
+                </div>
+
+                <small class="error" id="loginPasswordError"></small>
+            </div>
+
+            <!-- Login Success Message -->
+            <p class="success" id="loginSuccess"></p>
+
+            <!-- Login Button -->
+            <button type="submit">Login</button>
+
+            <p class="switch">
+                Don't have an account?
+                <a href="#" id="showSignup">Sign Up</a>
+            </p>
+
+        </form>
+
+
+        <!-- SIGNUP FORM -->
+        <form id="signupForm" class="hidden">
+
+            <h2>Create Account</h2>
+
+            <!-- Signup Email -->
+            <div class="input-group">
+                <label for="signupEmail">Email</label>
+
+                <input
+                    type="text"
+                    id="signupEmail"
+                    placeholder="Enter your email"
+                >
+
+                <small class="error" id="signupEmailError"></small>
+            </div>
+
+            <!-- Signup Password -->
+            <div class="input-group">
+                <label for="signupPassword">Password</label>
+
+                <div class="password-box">
+                    <input
+                        type="password"
+                        id="signupPassword"
+                        placeholder="Create a password"
+                    >
+
+                    <button
+                        type="button"
+                        class="toggle-password"
+                        data-target="signupPassword"
+                    >
+                        Show
+                    </button>
+                </div>
+
+                <small class="error" id="signupPasswordError"></small>
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="input-group">
+                <label for="confirmPassword">Confirm Password</label>
+
+                <div class="password-box">
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Re-enter your password"
+                    >
+
+                    <button
+                        type="button"
+                        class="toggle-password"
+                        data-target="confirmPassword"
+                    >
+                        Show
+                    </button>
+                </div>
+
+                <small class="error" id="confirmPasswordError"></small>
+            </div>
+
+            <!-- Signup Success Message -->
+            <p class="success" id="signupSuccess"></p>
+
+            <!-- Signup Button -->
+            <button type="submit">Sign Up</button>
+
+            <p class="switch">
+                Already have an account?
+                <a href="#" id="showLogin">Login</a>
+            </p>
+
+        </form>
+
+    </div>
+
+    <!-- JavaScript Connection -->
+    <script src="script.js"></script>
+
+</body>
+</html>
